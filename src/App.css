@@ -6,13 +6,17 @@
 #portfolio .row.bgrid-quarters .columns {
   float: none;
 }
+#portfolio .row.bgrid-quarters:after {
+  display: none;
+}
 .portfolio-card {
   background: #fff;
   border-radius: 4px;
   padding: 18px 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  height: 100%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 .portfolio-card h3 {
   font-size: 18px;
@@ -31,7 +35,8 @@
   color: #555;
 }
 .portfolio-card .repo-link {
-  margin-top: 10px;
+  margin-top: auto;
+  padding-top: 10px;
   font-size: 12px !important;
   color: #95a3a3 !important;
 }
