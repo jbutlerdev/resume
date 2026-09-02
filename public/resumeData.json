@@ -1,10 +1,10 @@
 {
   "main": {
     "name": "Jeremiah Butler",
-    "occupation": "Software Engineer",
-    "description": "With experience in IT, Networking, and Engineering, I have a well rounded background and am looking to solve new and complex problems.",
+    "occupation": "Senior Software Engineer",
+    "description": "10+ years across high-scale commerce, enterprise cloud, and defense systems",
     "image": "profilepic.jpg",
-    "bio": "Problem Solver, Leader, and Software Engineer with well rounded experience. Well versed in cloud native technologies and looking to make an impact on a global scale.",
+    "bio": "Problem solver and software engineer \u2014 10+ years shipping production systems across high-scale commerce, enterprise cloud, and defense. Go and C++ on Kubernetes, and applied ML from edge inference to production LLM agents.",
     "email": "hello@jbutler.dev",
     "address": {
       "city": "Boston ",
@@ -46,25 +46,34 @@
         "company": "Shopify",
         "title": "Senior Software Developer",
         "years": "January 2024 - Present",
-        "description": ""
+        "description": "",
+        "bullets": [
+          "Building subscription commerce features on the Selling Strategies team",
+          "Maintains the first-party Subscriptions app (Shopify/subscriptions-reference-app)",
+          "Owns the subscriptions and pre-orders APIs powering merchant flows; drives production rollouts and A/B testing"
+        ]
       },
       {
         "company": "IBM",
         "title": "Senior Software Engineer",
         "years": "April 2022 - January 2024",
-        "description": ""
+        "description": "",
+        "bullets": [
+          "Developed a hybrid-cloud (AWS/Azure/GCP) monitoring solution for SevOne NPM that won a new customer",
+          "Published a generalized ETL collection framework adopted across multiple solution teams",
+          "Served as the model team for the company-wide agile + DevOps migration"
+        ]
       },
       {
         "company": "General Dynamics Mission Systems",
-        "title": "Software Engineer",
+        "title": "Advanced Software Engineer / Software Lead",
         "years": "July 2015 - March 2022",
-        "description": ""
-      },
-      {
-        "company": "Ichabod Crane School District",
-        "title": "Network Engineer",
-        "years": "May 2014 - July 2015",
-        "description": ""
+        "description": "",
+        "bullets": [
+          "Led multiple teams to test events and contract awards totaling $30M+",
+          "Architected cloud-based mission systems for DoD; led internal research bringing ML to the tactical edge",
+          "Built an innersource community with 100+ reusable projects; presented the concept to 130+ participants"
+        ]
       }
     ],
     "skills": [
@@ -72,42 +81,73 @@
         "name": "Golang"
       },
       {
-        "name": "Virtualization"
-      },
-      {
-        "name": "Leadership"
-      },
-      {
         "name": "C++"
-      },
-      {
-        "name": "Containerization"
-      },
-      {
-        "name": "Communication"
       },
       {
         "name": "Python"
       },
       {
+        "name": "TypeScript"
+      },
+      {
+        "name": "Ruby"
+      },
+      {
+        "name": "Java"
+      },
+      {
         "name": "Kubernetes"
       },
       {
-        "name": "Agile"
+        "name": "Docker"
       },
       {
-        "name": "Javascript"
+        "name": "Terraform"
       },
       {
-        "name": "Git"
+        "name": "Machine Learning"
       },
       {
-        "name": "DevOps"
+        "name": "LLM / Agent Development (RAG)"
+      },
+      {
+        "name": "Microservices"
+      },
+      {
+        "name": "gRPC / REST"
+      },
+      {
+        "name": "CI/CD / DevOps"
+      },
+      {
+        "name": "Virtualization"
       }
     ]
   },
   "portfolio": {
     "icon": "fa fa-github",
-    "url": "https://github.com/jbutlerdev"
+    "url": "https://github.com/jbutlerdev",
+    "projects": [
+      {
+        "name": "Mule",
+        "repo": "https://github.com/mule-ai/mule",
+        "blurb": "AI workflow platform \u2014 agents, custom tools, and WebAssembly modules for automation pipelines (Go)"
+      },
+      {
+        "name": "Mule Search",
+        "repo": "https://github.com/mule-ai/search",
+        "blurb": "Fast, flexible command-line search tool (Go)"
+      },
+      {
+        "name": "Forge",
+        "repo": "https://github.com/jbutlerdev/forge",
+        "blurb": "Durable AI coding-agent platform \u2014 Rust API server over long-lived pi agent sessions, PostgreSQL persistence, live SSE event streaming"
+      },
+      {
+        "name": "LLM Wiki",
+        "repo": "https://github.com/jbutlerdev/llm-wiki",
+        "blurb": "LLM-maintained personal wiki with built-in search, an embedded coding agent, and a modern web UI (TypeScript)"
+      }
+    ]
   }
 }
