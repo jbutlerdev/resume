@@ -1,4 +1,11 @@
 /* Portfolio project cards */
+#portfolio .row.bgrid-quarters {
+  display: flex;
+  flex-wrap: wrap;
+}
+#portfolio .row.bgrid-quarters .columns {
+  float: none;
+}
 .portfolio-card {
   background: #fff;
   border-radius: 4px;
@@ -32,11 +39,19 @@
 /* Work bullets in the resume section */
 .work-bullets {
   margin: 0 0 12px 0;
-  padding-left: 18px;
+  padding-left: 0;
 }
 .work-bullets li {
-  margin-bottom: 4px;
-  line-height: 1.4;
+  margin: 0 0 6px 0;
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.5;
+}
+.work-bullets li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #11abb0;
 }
 
 /* "More on GitHub" link */
