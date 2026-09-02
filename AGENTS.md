@@ -27,6 +27,8 @@ npm install            # install deps (node_modules is gitignored)
 npm start              # dev server with hot reload → http://localhost:3000
 npm run build          # production build → build/
 npm test               # single smoke test (src/App.test.js, jsdom)
+make resume-pdf        # rebuild latex/resume.tex → latex/resume.pdf, copy to public/JeremiahButler.pdf
+make site              # npm run build
 ```
 
 Dev server needs `node_modules` present and port 3000 free. If a stale background
@@ -38,6 +40,7 @@ server is on 3000: `pkill -f react-scripts`.
 public/            Static assets served as-is
   index.html       HTML shell; React mounts into <div id="root">
   resumeData.json  THE content — all resume/portfolio/site text lives here
+  JeremiahButler.pdf  served resume PDF, generated from latex/resume.tex (make resume-pdf)
   css/ js/ images/  legacy template assets (do not edit unless asked)
   manifest.json    PWA manifest
 src/               React app
@@ -46,6 +49,7 @@ src/               React app
   App.test.js      smoke test
   Components/      Header, About, Resume, Portfolio, Footer (each renders a slice of the data)
   App.css, index.css
+latex/             resume.tex + resume.cls → resume.pdf (build with `make resume-pdf`, needs tectonic)
 docs/              previous committed production build output (gitignored in spirit; not source)
 Dockerfile         multi-stage: node:20 `npm ci` + build → nginx:alpine serving build/
 build-app.sh       legacy podman build helper (predates the current Dockerfile)
@@ -55,6 +59,8 @@ build-app.sh       legacy podman build helper (predates the current Dockerfile)
 
 - **Edit content**: change `public/resumeData.json`. The React components read from
   `data.main`, `data.resume`, and `data.portfolio` (see `src/App.js`).
+  The downloadable resume PDF is a *separate* LaTeX source (`latex/resume.tex`);
+  keep the two in sync when work history or skills change, then `make resume-pdf`.
 - **Edit look/structure**: the `src/Components/*.js` class components and the
   CSS in `public/css/`.
 - Components are intentionally simple presentational `Component` classes taking
