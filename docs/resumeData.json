@@ -4,10 +4,10 @@
     "occupation": "Senior Software Engineer",
     "description": "10+ years across high-scale commerce, enterprise cloud, and defense systems",
     "image": "profilepic.jpg",
-    "bio": "Problem solver and software engineer \u2014 10+ years shipping production systems across high-scale commerce, enterprise cloud, and defense. Go and C++ on Kubernetes, and applied ML from edge inference to production LLM agents.",
+    "bio": "Problem solver and software engineer — 10+ years shipping production systems across high-scale commerce, enterprise cloud, and defense. Go and C++ on Kubernetes, and applied ML from edge inference to production LLM agents.",
     "email": "hello@jbutler.dev",
     "address": {
-      "city": "Boston ",
+      "city": "Boston",
       "state": "Massachusetts"
     },
     "website": "https://www.jbutler.dev",
@@ -131,7 +131,7 @@
       {
         "name": "Mule",
         "repo": "https://github.com/mule-ai/mule",
-        "blurb": "AI workflow platform \u2014 agents, custom tools, and WebAssembly modules for automation pipelines (Go)"
+        "blurb": "AI workflow platform — agents, custom tools, and WebAssembly modules for automation pipelines (Go)"
       },
       {
         "name": "Mule Search",
@@ -141,7 +141,7 @@
       {
         "name": "Forge",
         "repo": "https://github.com/jbutlerdev/forge",
-        "blurb": "Durable AI coding-agent platform \u2014 Rust API server over long-lived pi agent sessions, PostgreSQL persistence, live SSE event streaming"
+        "blurb": "Durable AI coding-agent platform — Rust API server over long-lived pi agent sessions, PostgreSQL persistence, live SSE event streaming"
       },
       {
         "name": "LLM Wiki",
