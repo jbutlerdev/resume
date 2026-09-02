@@ -1,9 +1,9 @@
-FROM node as app-builder
+FROM node:20 AS app-builder
 WORKDIR /app
-COPY . /app/
-RUN npm install jquery --save && \
-    npm install react-ga --save && \
-    npm run build
-FROM nginx
-COPY --from=app-builder /app/build/ /usr/share/nginx/html/
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
 
+FROM nginx:alpine
+COPY --from=app-builder /app/build/ /usr/share/nginx/html/
