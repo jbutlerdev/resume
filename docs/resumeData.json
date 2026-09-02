@@ -43,9 +43,15 @@
     ],
     "work": [
       {
+        "company": "Shopify",
+        "title": "Senior Software Developer",
+        "years": "January 2024 - Present",
+        "description": ""
+      },
+      {
         "company": "IBM",
         "title": "Senior Software Engineer",
-        "years": "April 2022 - Present",
+        "years": "April 2022 - January 2024",
         "description": ""
       },
       {
