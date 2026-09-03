@@ -1,0 +1,25 @@
+#!/bin/sh
+# Pre-commit: keep deploy artifacts (docs/, PDFs) in sync with source.
+#
+# If the commit touches any source that feeds the site or the resume PDF,
+# rebuild everything via `make deploy` and stage the regenerated artifacts.
+# Skips entirely for commits that don't touch those sources (e.g. README).
+#
+# Bypass in a pinch with: git commit --no-verify
+
+set -e
+
+# Sources that require a rebuild when staged.
+SOURCES="latex/resume.tex latex/resume.cls public src package.json package-lock.json"
+
+if git diff --cached --quiet -- $SOURCES; then
+    exit 0
+fi
+
+echo "pre-commit: source changed; rebuilding PDF + site + docs/ (make deploy)"
+make deploy
+
+# Stage the regenerated artifacts so the commit ships source + build together.
+git add docs latex/resume.pdf public/JeremiahButler.pdf
+
+echo "pre-commit: deploy artifacts rebuilt and staged"
