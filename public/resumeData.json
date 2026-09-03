@@ -1,10 +1,10 @@
 {
   "main": {
     "name": "Jeremiah Butler",
-    "occupation": "Senior Software Engineer",
-    "description": "10+ years across high-scale commerce, enterprise cloud, and defense systems",
+    "occupation": "Software Engineer · Building Autonomous AI Systems",
+    "description": "10+ years across high-scale commerce, enterprise cloud, and defense. Now building autonomous AI systems",
     "image": "profilepic.jpg",
-    "bio": "Problem solver and software engineer — 10+ years shipping production systems across high-scale commerce, enterprise cloud, and defense. Go and C++ on Kubernetes, and applied ML from edge inference to agent-based tooling.",
+    "bio": "Problem solver and software engineer with 10+ years shipping production systems across high-scale commerce ($300B+ GMV at Shopify), enterprise cloud, and defense. Now building autonomous AI systems: agents, orchestration, and the platforms behind them. Go, Rust, and C++ on Kubernetes; applied ML from edge inference to autonomous agents.",
     "email": "hello@jbutler.dev",
     "address": {
       "city": "Boston",
@@ -45,12 +45,15 @@
       {
         "company": "Shopify",
         "title": "Senior Software Developer",
-        "years": "January 2024 - Present",
+        "years": "January 2024 - September 2026",
         "description": "",
         "bullets": [
-          "Building subscription commerce features on the Selling Strategies team",
-          "Maintains the first-party Subscriptions app (Shopify/subscriptions-reference-app)",
-          "Owns the subscriptions and pre-orders APIs powering merchant flows; drives production rollouts and A/B testing"
+          "Built autonomous agent systems: integrated coding agents with Shopify's durable agent infrastructure (Aquifer/River), a voice-controlled conductor agent orchestrating multiple agent sessions via an agent control plane, and automated support-request triage",
+          "Drove AI-assisted engineering on the team: built a Rust terminal multiplexer for managing concurrent agent sessions and work items; authored code-review agent skills adopted by teammates; presented autonomous agent-loop techniques to hundreds of engineers on Shopify's internal broadcast platform",
+          "Owned the platform Subscriptions and Pre-orders APIs that all Shopify subscription apps build on",
+          "Built and maintained the open-source Subscriptions reference app: Shopify's first-party subscriptions product and the foundation enterprise merchants fork for bespoke subscription experiences",
+          "Restructured team on-call and resiliency practices; burned down a backlog of ~20 resiliency issues to zero in 4 months while intake continued",
+          "2x project champion for cross-team initiatives spanning B2B, checkout, legal, and UX; authored 2 RFCs and owned 2 design docs for core data-model changes; mentored a junior engineer to a senior promotion"
         ]
       },
       {
@@ -59,8 +62,8 @@
         "years": "April 2022 - January 2024",
         "description": "",
         "bullets": [
-          "Developed a hybrid-cloud (AWS/Azure/GCP) monitoring solution for SevOne NPM that won a new customer",
-          "Published a generalized ETL collection framework adopted across multiple solution teams",
+          "Developed a hybrid-cloud (AWS/Azure/GCP) monitoring solution for the SevOne Network Performance Management platform",
+          "Published a generalized ETL collection framework, adopted into SevOne for data collection",
           "Served as the model team for the company-wide agile + DevOps migration"
         ]
       },
@@ -78,10 +81,16 @@
     ],
     "skills": [
       {
+        "name": "AI Agents / LLM Systems"
+      },
+      {
+        "name": "Machine Learning"
+      },
+      {
         "name": "Golang"
       },
       {
-        "name": "C++"
+        "name": "Rust"
       },
       {
         "name": "Python"
@@ -93,7 +102,7 @@
         "name": "Ruby"
       },
       {
-        "name": "Java"
+        "name": "C++"
       },
       {
         "name": "Kubernetes"
@@ -105,12 +114,6 @@
         "name": "Terraform"
       },
       {
-        "name": "Machine Learning"
-      },
-      {
-        "name": "LLM / Agent Development (RAG)"
-      },
-      {
         "name": "Microservices"
       },
       {
@@ -118,9 +121,6 @@
       },
       {
         "name": "CI/CD / DevOps"
-      },
-      {
-        "name": "Virtualization"
       }
     ]
   },
@@ -131,17 +131,17 @@
       {
         "name": "Mule",
         "repo": "https://github.com/mule-ai/mule",
-        "blurb": "AI workflow platform — agents, custom tools, and WebAssembly modules for automation pipelines (Go)"
+        "blurb": "AI workflow platform: agents, custom tools, and WebAssembly modules for automation pipelines (Go)"
       },
       {
         "name": "Mule Search",
         "repo": "https://github.com/mule-ai/search",
-        "blurb": "Fast, flexible command-line search tool (Go)"
+        "blurb": "SearXNG-backed metasearch CLI with JSON/Markdown output, used as the web-search tool by Mule and Forge agents (Go)"
       },
       {
         "name": "Forge",
         "repo": "https://github.com/jbutlerdev/forge",
-        "blurb": "Durable AI coding-agent platform — Rust API server over long-lived pi agent sessions, PostgreSQL persistence, live SSE event streaming"
+        "blurb": "Durable AI coding-agent platform: Rust API server over long-lived pi agent sessions, PostgreSQL persistence, live SSE event streaming"
       },
       {
         "name": "LLM Wiki",
