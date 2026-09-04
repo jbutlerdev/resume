@@ -16,7 +16,7 @@
 %	Summary Section
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Summary}
-Software engineer with 10+ years shipping production systems across high-scale commerce, enterprise cloud, and defense. Owned platform APIs used by every subscription app on Shopify's \$300B+ GMV platform. Builds autonomous AI systems: agent orchestration, durable agent infrastructure integrations, and AI-assisted engineering practices adopted across teams. Track record of cross-team technical leadership: RFCs, design ownership, mentorship, and operational turnarounds.
+Software engineer with 10+ years owning platform systems across high-scale commerce, enterprise cloud, and defense. Owned the Shopify APIs that every third-party subscription app builds on. Current focus is autonomous agent systems: orchestration, durable execution, and AI-assisted engineering practices adopted by other teams. Takes on problems without a clear owner: a single-value limit baked into a core model, a failing on-call rotation, an innersource community of 100+ projects.
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -27,27 +27,27 @@ Software engineer with 10+ years shipping production systems across high-scale c
 \begin{rSubsection}{Shopify}{Remote}
 {Senior Software Developer}
 {January 2024 - September 2026}
-\item Built autonomous agent systems: integrated coding agents with Shopify's durable agent infrastructure (Aquifer/River), built a voice-controlled conductor agent orchestrating multiple agent sessions, and automated support-request triage
-\item Drove AI-assisted engineering: built a Rust terminal multiplexer for managing concurrent agent sessions; authored code-review agent skills (correctness, completeness, OO design) adopted by teammates; presented autonomous agent-loop techniques to hundreds of engineers on Shopify's internal broadcast platform
+\item Built autonomous agent systems: integrated coding agents with Shopify's durable agent infrastructure (Aquifer/River) so agent sessions ran unattended and survived restarts for day-to-day IC work; orchestrated multiple concurrent sessions through a voice-controlled conductor agent
+\item Drove AI-assisted engineering: authored code-review agent skills (correctness, completeness, OO design) that repeatedly caught bugs and design flaws human reviewers missed, and were adopted by teammates on that track record; presented autonomous agent-loop techniques to hundreds of engineers on Shopify's internal broadcast platform
 \item Owned the platform Subscriptions and Pre-orders APIs that all Shopify subscription apps build on
+\item Redesigned a core subscriptions data model that owned data it shouldn't and constrained it to a single instance; extracted the data onto its own model and refactored the relationship to support N, with a live backfill of existing records
 \item Built and maintained the open-source Subscriptions reference app: Shopify's first-party subscriptions product and the foundation enterprise merchants fork for bespoke subscription experiences
-\item Restructured team on-call and resiliency practices; burned down a backlog of \textasciitilde20 resiliency issues to zero in 4 months; organized BFCM Game Day exercises (fault injection, monitoring hardening, mock support requests) ahead of peak load
-\item 2x project champion for cross-team initiatives spanning B2B, checkout, legal, and UX; authored 2 RFCs and owned 2 design docs for core data-model changes; mentored a junior engineer to a senior promotion and 2 interns
+\item Restructured team on-call and resiliency practices; built an agent that routed, categorized, and drafted root-cause analysis for incoming support requests, adopted by the team to absorb intake while burning down a backlog of \textasciitilde20 resiliency issues to zero in 4 months; organized BFCM Game Day exercises (fault injection, monitoring hardening, mock support requests) ahead of peak load
+\item 2x project champion for cross-team initiatives spanning B2B, checkout, legal, and UX; mentored a junior engineer to a senior promotion and 2 interns
 \end{rSubsection}
 
 \begin{rSubsection}{IBM}{Cambridge, Massachusetts}
 {Senior Software Engineer}
 {April 2022 - January 2024}
+\item Published a generalized ETL collection framework, adopted into the SevOne product to replace one-off legacy Go and Python collectors; used it to build gNMI device collection
 \item Developed a hybrid-cloud (AWS, Azure, GCP) monitoring solution for the IBM SevOne Network Performance Management platform
-\item Published a generalized ETL collection framework, adopted into SevOne for data collection
-\item Led twice-weekly code kata exercises to foster team growth and collaboration
-\item Team served as the model for the company-wide migration to agile and DevOps
+\item Ran twice-weekly code katas; team served as the model for the SevOne org's agile and DevOps migration
 \end{rSubsection}
 
 \begin{rSubsection}{General Dynamics Mission Systems}{Taunton, Massachusetts}
 {Advanced Software Engineer / Software Lead}
 {July 2015 - March 2022}
- \item Led multiple teams through successful test events and contract awards totaling over \$30 million
+ \item Software technical lead on a microservice architecture for radio operators that won a \$30M+ contract award; led multiple teams through the test events behind it
  \item Architected large-scale cloud-based mission systems for DoD customers
  \item Proposed and led internal research bringing machine learning to the tactical edge; adopted by at least 2 further projects
  \item Created an innersource community with 100+ reusable projects; presented the concept to 130+ participants
@@ -59,7 +59,22 @@ Software engineer with 10+ years shipping production systems across high-scale c
 %----------------------------------------------------------------------------------------
 %	Education Section
 %----------------------------------------------------------------------------------------
-\newpage
+%----------------------------------------------------------------------------------------
+%	Projects Section
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+
+{\bf Forge} \hfill {\em github.com/jbutlerdev/forge}
+\\ Durable AI coding-agent platform: Rust API server over long-lived agent sessions, PostgreSQL persistence, and live SSE event streaming
+\\
+\\{\bf Mule} \hfill {\em github.com/mule-ai/mule}
+\\ AI workflow platform: agents, custom tools, and WebAssembly modules for automation pipelines (Go)
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Education Section
+%----------------------------------------------------------------------------------------
 \begin{rSection}{Education}
 
 {\bf Georgia Institute of Technology} \hfill {\em 2018 - 2021}
@@ -80,15 +95,11 @@ Autonomous Agents, Agent Orchestration, LLM Integration, RAG, \\
 AI Coding Agents, Machine Learning
 
 \textbf{Programming Languages:}
-Golang, Rust, Ruby, TypeScript, Python, C++, Java
+Golang, Rust, Ruby, TypeScript, Python, C++
 
 \textbf{Platform \& Infrastructure:}
-Kubernetes, Docker, Terraform, Ansible, MySQL, \\
-PostgreSQL, Redis, gRPC, REST, Microservices, CI/CD, Virtualization
-
-\textbf{Leadership:}
-Cross-team Initiatives, RFCs \& Design Ownership, Mentorship, \\
-Agile, DevOps, TDD
+Kubernetes, Docker, Terraform, MySQL, PostgreSQL, Redis, \\
+gRPC, REST, Microservices, CI/CD, DevOps, TDD, Agile, Virtualization
 
 \end{rSection}
 
