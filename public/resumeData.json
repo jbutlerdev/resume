@@ -48,7 +48,7 @@
         "years": "January 2024 - September 2026",
         "description": "",
         "bullets": [
-          "Built autonomous agent systems: integrated coding agents with Shopify's durable agent infrastructure (Aquifer/River) so agent sessions ran unattended and survived restarts for day-to-day IC work; orchestrated multiple concurrent sessions through a voice-controlled conductor agent over an agent control plane",
+          "Built autonomous agent systems: integrated coding agents with Shopify's durable agent infrastructure so agent sessions ran unattended and survived restarts for day-to-day IC work; orchestrated multiple concurrent sessions through a voice-controlled conductor agent over an agent control plane",
           "Drove AI-assisted engineering on the team: authored code-review agent skills that repeatedly caught bugs and design flaws human reviewers missed, and were adopted by teammates on that track record; presented autonomous agent-loop techniques to hundreds of engineers on Shopify's internal broadcast platform",
           "Owned the platform Subscriptions and Pre-orders APIs that all Shopify subscription apps build on",
           "Redesigned a core subscriptions data model that owned data it shouldn't and constrained it to a single instance; extracted the data onto its own model and refactored the relationship to support N, with a live backfill of existing records",
