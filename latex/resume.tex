@@ -7,8 +7,9 @@
 \usepackage[left=0.5in,top=0.6in,right=0.5in,bottom=0.6in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\address{Easton, MA 02356} % Your address
-\address{ (774) 329-5096 - hello@jbutler.dev}
+\usepackage[hidelinks]{hyperref} % Clickable links, no coloured boxes
+\address{Easton, MA 02356 - (774) 329-5096 - \href{mailto:hello@jbutler.dev}{hello@jbutler.dev}} % Your address
+\address{\href{https://jbutler.dev}{jbutler.dev} - \href{https://github.com/jbutlerdev}{github.com/jbutlerdev} - \href{https://linkedin.com/in/jbutler992}{linkedin.com/in/jbutler992}}
 \name{Jeremiah Butler} % Your name
 
 \begin{document}
@@ -65,10 +66,10 @@ Software engineer with 10+ years owning platform systems across high-scale comme
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Projects}
 
-{\bf Forge} \hfill {\em github.com/jbutlerdev/forge}
+{\bf Forge} \hfill {\em \href{https://github.com/jbutlerdev/forge}{github.com/jbutlerdev/forge}}
 \\ Durable AI coding-agent platform: Rust API server over long-lived agent sessions, PostgreSQL persistence, and live SSE event streaming
 \\
-\\{\bf Mule} \hfill {\em github.com/mule-ai/mule}
+\\{\bf Mule} \hfill {\em \href{https://github.com/mule-ai/mule}{github.com/mule-ai/mule}}
 \\ AI workflow platform: agents, custom tools, and WebAssembly modules for automation pipelines (Go)
 
 \end{rSection}
