@@ -8,7 +8,17 @@
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \usepackage[hidelinks]{hyperref} % Clickable links, no coloured boxes
-\address{Easton, MA 02356 - \href{mailto:hello@jbutler.dev}{hello@jbutler.dev}} % Your address
+
+% Contact block. The public build (served at jbutler.dev) omits the phone number
+% and street-level location; the private build for job applications includes them.
+% Toggled by \PRIVATECONTACT, which `make resume-private` defines on the command
+% line. Do not hardcode it here or the public PDF will leak the phone number.
+\providecommand{\PRIVATECONTACT}{0}
+\if\PRIVATECONTACT1
+  \address{Easton, MA 02356 - (774) 329-5096 - \href{mailto:hello@jbutler.dev}{hello@jbutler.dev}}
+\else
+  \address{Greater Boston, MA - \href{mailto:hello@jbutler.dev}{hello@jbutler.dev}}
+\fi
 \address{\href{https://jbutler.dev}{jbutler.dev} - \href{https://github.com/jbutlerdev}{github.com/jbutlerdev} - \href{https://linkedin.com/in/jbutler992}{linkedin.com/in/jbutler992}}
 \name{Jeremiah Butler} % Your name
 

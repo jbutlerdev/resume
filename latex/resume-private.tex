@@ -1,0 +1,8 @@
+% Private build of the resume: identical content to resume.tex, but the contact
+% block includes the phone number and street-level address.
+%
+% Build with `make resume-private` from the repo root. Output lands in out/,
+% which is gitignored, so this PDF is never committed or served from jbutler.dev.
+% Send it to job applications; publish latex/resume.pdf instead.
+\def\PRIVATECONTACT{1}
+\input{resume.tex}
