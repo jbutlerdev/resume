@@ -1,8 +1,8 @@
 {
   "main": {
     "name": "Jeremiah Butler",
-    "occupation": "Software Engineer · Building Autonomous AI Systems",
-    "description": "10+ years across high-scale commerce, enterprise cloud, and defense. Now building autonomous AI systems",
+    "occupation": "Software Engineer",
+    "description": "10+ years owning platform systems across high-scale commerce, enterprise cloud, and defense",
     "image": "profilepic.jpg",
     "bio": "Software engineer with 10+ years owning platform systems across high-scale commerce, enterprise cloud, and defense. Owned the Shopify APIs that every third-party subscription app builds on. Current focus is autonomous agent systems: orchestration, durable execution, and AI-assisted engineering practices adopted by other teams. Takes on problems without a clear owner: a single-value limit baked into a core model, a failing on-call rotation, an innersource community of 100+ projects.",
     "email": "hello@jbutler.dev",
@@ -54,7 +54,8 @@
           "Redesigned a core subscriptions data model that owned data it shouldn't and constrained it to a single instance; extracted the data onto its own model and refactored the relationship to support N, with a live backfill of existing records",
           "Built and maintained the open-source Subscriptions reference app: Shopify's first-party subscriptions product and the foundation enterprise merchants fork for bespoke subscription experiences",
           "Restructured team on-call and resiliency practices; built an agent that routed, categorized, and drafted root-cause analysis for incoming support requests, adopted by the team to absorb intake while burning down a backlog of ~20 resiliency issues to zero in 4 months; organized BFCM Game Day exercises (fault injection, monitoring hardening, mock support requests) ahead of peak load",
-          "2x project champion for cross-team initiatives spanning B2B, checkout, legal, and UX; mentored a junior engineer to a senior promotion and 2 interns"
+          "Led 2 cross-team initiatives spanning B2B, checkout, legal, and UX",
+          "Mentored a junior engineer through to a senior promotion, plus 2 interns"
         ]
       },
       {
