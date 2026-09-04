@@ -22,7 +22,7 @@ class Portfolio extends Component {
       <section id="portfolio">
         <div className="row">
           <div className="twelve columns collapsed">
-            <h1>Selected Works <i className={icon} /></h1>
+            <h1>Open Source Projects <i className={icon} /></h1>
           </div>
         </div>
         <div className="row bgrid-quarters">
