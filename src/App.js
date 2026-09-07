@@ -47,10 +47,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header data={this.state.resumeData.main}/>
-        <LabPulse/>
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
+        <LabPulse/>
         <Footer data={this.state.resumeData.main}/>
       </div>
     );
