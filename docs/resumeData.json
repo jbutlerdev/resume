@@ -4,7 +4,7 @@
     "occupation": "Software Engineer",
     "description": "10+ years owning platform systems across high-scale commerce, enterprise cloud, and defense",
     "image": "profilepic.jpg",
-    "bio": "Software engineer with 10+ years owning platform systems across high-scale commerce, enterprise cloud, and defense. Owned the Shopify APIs that every third-party subscription app builds on. Current focus is autonomous agent systems: orchestration, durable execution, and AI-assisted engineering practices adopted by other teams. Takes on problems without a clear owner: a single-value limit baked into a core model, a failing on-call rotation, an innersource community of 100+ projects.",
+    "bio": "Software engineer with 10+ years experience across high-scale commerce, enterprise cloud, and defense. Takes on the problems nobody owns and nobody has scoped yet, and drives them to done.",
     "email": "hello@jbutler.dev",
     "address": {
       "city": "Boston",
@@ -48,13 +48,13 @@
         "years": "January 2024 - September 2026",
         "description": "",
         "bullets": [
-          "Built autonomous agent systems: integrated coding agents with Shopify's durable agent infrastructure so agent sessions ran unattended and survived restarts for day-to-day IC work; orchestrated multiple concurrent sessions through a voice-controlled conductor agent over an agent control plane",
-          "Drove AI-assisted engineering on the team: authored code-review agent skills that repeatedly caught bugs and design flaws human reviewers missed, and were adopted by teammates on that track record; presented autonomous agent-loop techniques to hundreds of engineers on Shopify's internal broadcast platform",
           "Owned the platform Subscriptions and Pre-orders APIs that all Shopify subscription apps build on",
-          "Redesigned a core subscriptions data model that owned data it shouldn't and constrained it to a single instance; extracted the data onto its own model and refactored the relationship to support N, with a live backfill of existing records",
           "Built and maintained the open-source Subscriptions reference app: Shopify's first-party subscriptions product and the foundation enterprise merchants fork for bespoke subscription experiences",
+          "Built autonomous agent systems: integrated coding agents with Shopify's durable agent infrastructure so agent sessions ran unattended and survived restarts for day-to-day IC work; orchestrated multiple concurrent sessions through a voice-controlled conductor agent",
+          "Drove AI-assisted engineering: authored code-review agent skills (correctness, completeness, OO design). These caught an average of 8 issues per Pull Request which led to team-wide adoption; presented autonomous agent-loop techniques to hundreds of engineers on Shopify's internal broadcast platform",
+          "Refactored a core subscriptions data model fixing a one-to-one relationship that needed to become one-to-many. Handled migration of production data",
           "Restructured team on-call and resiliency practices; built an agent that routed, categorized, and drafted root-cause analysis for incoming support requests, adopted by the team to absorb intake while burning down a backlog of ~20 resiliency issues to zero in 4 months; organized BFCM Game Day exercises (fault injection, monitoring hardening, mock support requests) ahead of peak load",
-          "Led 2 cross-team initiatives spanning B2B, checkout, legal, and UX",
+          "Led 2 cross-team projects spanning B2B, checkout, legal, and UX",
           "Mentored a junior engineer through to a senior promotion, plus 2 interns"
         ]
       },
@@ -65,8 +65,8 @@
         "description": "",
         "bullets": [
           "Published a generalized ETL collection framework, adopted into the SevOne product to replace one-off legacy Go and Python collectors; used it to build gNMI device collection",
-          "Developed a hybrid-cloud (AWS/Azure/GCP) monitoring solution for the SevOne Network Performance Management platform",
-          "Ran twice-weekly code katas; team served as the model for the SevOne org's agile + DevOps migration"
+          "Developed a hybrid-cloud (AWS, Azure, GCP) monitoring solution for the IBM SevOne Network Performance Management platform",
+          "Ran twice-weekly code katas; team served as the model for the SevOne org's agile and DevOps migration"
         ]
       },
       {
@@ -76,8 +76,10 @@
         "description": "",
         "bullets": [
           "Software technical lead on a microservice architecture for radio operators that won a $30M+ contract award; led multiple teams through the test events behind it",
-          "Architected cloud-based mission systems for DoD; led internal research bringing ML to the tactical edge",
-          "Built an innersource community with 100+ reusable projects; presented the concept to 130+ participants"
+          "Architected large-scale cloud-based mission systems for DoD customers",
+          "Proposed and led internal research bringing machine learning to the tactical edge; adopted by at least 2 further projects",
+          "Created an innersource community with 100+ reusable projects; presented the concept to 130+ participants",
+          "Engineering Leadership Program graduate"
         ]
       }
     ],
@@ -99,6 +101,9 @@
       },
       {
         "name": "TypeScript"
+      },
+      {
+        "name": "React"
       },
       {
         "name": "Ruby"
@@ -143,7 +148,7 @@
       {
         "name": "Forge",
         "repo": "https://github.com/jbutlerdev/forge",
-        "blurb": "Durable AI coding-agent platform: Rust API server over long-lived pi agent sessions, PostgreSQL persistence, live SSE event streaming"
+        "blurb": "Durable AI coding-agent platform: Rust API server over long-lived agent sessions, PostgreSQL persistence, and live SSE event streaming"
       },
       {
         "name": "LLM Wiki",
@@ -153,4 +158,3 @@
     ]
   }
 }
-
