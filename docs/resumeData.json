@@ -148,6 +148,7 @@
       {
         "name": "Forge",
         "repo": "https://github.com/jbutlerdev/forge",
+        "live": "https://forge.jbutler.dev",
         "blurb": "Durable AI coding-agent platform: Rust API server over long-lived agent sessions, PostgreSQL persistence, and live SSE event streaming"
       },
       {

@@ -10,7 +10,10 @@ class Portfolio extends Component {
       var cards = projects.map(function(p){
         return (
           <div key={p.name} className="four columns portfolio-card">
-            <a href={p.repo} target="_blank" rel="noreferrer"><h3>{p.name}</h3></a>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+              <a href={p.repo} target="_blank" rel="noreferrer"><h3>{p.name}</h3></a>
+              {p.live ? <a href={p.live} target="_blank" rel="noreferrer" style={{ fontSize: '0.8em', color: '#3fb950', whiteSpace: 'nowrap', marginLeft: '8px' }}>Try it live&nbsp;&#8594;</a> : null}
+            </div>
             <p>{p.blurb}</p>
             <p className="repo-link"><i className={icon}></i> <span>{p.repo.replace('https://', '')}</span></p>
           </div>
