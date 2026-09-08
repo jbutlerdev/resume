@@ -138,6 +138,7 @@
       {
         "name": "Mule",
         "repo": "https://github.com/mule-ai/mule",
+        "live": "https://mule.jbutler.dev",
         "blurb": "AI workflow platform: agents, custom tools, and WebAssembly modules for automation pipelines (Go)"
       },
       {
