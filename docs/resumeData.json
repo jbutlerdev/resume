@@ -142,9 +142,10 @@
         "blurb": "AI workflow platform: agents, custom tools, and WebAssembly modules for automation pipelines (Go)"
       },
       {
-        "name": "Mule Search",
-        "repo": "https://github.com/mule-ai/search",
-        "blurb": "SearXNG-backed metasearch CLI with JSON/Markdown output, used as the web-search tool by Mule and Forge agents (Go)"
+        "name": "Ranch",
+        "repo": "https://github.com/mule-ai/ranch",
+        "live": "https://mule-ai.github.io/ranch/",
+        "blurb": "Personal terminal multiplexer with a cloud relay: long-lived sessions on your own machine, reachable from terminal, browser, or phone (Rust)"
       },
       {
         "name": "Forge",
