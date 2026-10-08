@@ -6,7 +6,6 @@ import Footer from './Components/Footer';
 import About from './Components/About';
 import Resume from './Components/Resume';
 import Portfolio from './Components/Portfolio';
-import LabPulse from './Components/LabPulse';
 
 class App extends Component {
 
@@ -50,7 +49,6 @@ class App extends Component {
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
-        <LabPulse/>
         <Footer data={this.state.resumeData.main}/>
       </div>
     );

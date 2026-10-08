@@ -138,7 +138,6 @@
       {
         "name": "Mule",
         "repo": "https://github.com/mule-ai/mule",
-        "live": "https://mule.jbutler.dev",
         "blurb": "AI workflow platform: agents, custom tools, and WebAssembly modules for automation pipelines (Go)"
       },
       {
@@ -150,7 +149,6 @@
       {
         "name": "Forge",
         "repo": "https://github.com/jbutlerdev/forge",
-        "live": "https://forge.jbutler.dev",
         "blurb": "Durable AI coding-agent platform: Rust API server over long-lived agent sessions, PostgreSQL persistence, and live SSE event streaming"
       },
       {
